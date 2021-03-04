@@ -1,0 +1,11 @@
+.Grid {
+	@include setGrid(2);
+
+	@include from(md) {
+			@include setGrid(6);
+	}
+
+	@include from(xl) {
+			@include setGrid(12);
+	}
+}

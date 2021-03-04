@@ -1,0 +1,18 @@
+.t1 {
+	@include verticalRhythm(6);
+}
+.t2 {
+	@include verticalRhythm(5)
+}
+.t3 {
+	@include verticalRhythm(4)
+}
+.t4 {
+	@include verticalRhythm(3)
+}
+.t5 {
+	@include verticalRhythm(2)
+}
+.t6 {
+	@include verticalRhythm(1)
+}

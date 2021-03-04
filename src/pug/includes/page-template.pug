@@ -1,0 +1,20 @@
+block config
+	include ./_config
+
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+		meta(name="distribution", content="global")
+		meta(name="robots", content="index")
+		meta(name="author", content=author)
+		block meta
+		meta(name="description", content=description)
+		title #{title}
+		link(href='./style.css', rel='stylesheet', defer)
+		script(type="text/javascript", src="./app.js")
+	body
+		block header
+		block content
+		block footer

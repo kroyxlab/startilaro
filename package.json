@@ -1,0 +1,40 @@
+{
+  "name": "startilaro",
+  "version": "1.0.0",
+  "description": "Starta ilaro por krei statikajn retpaĝojn per Pug, Scss kaj Typescript",
+  "main": "",
+  "scripts": {
+    "pug": "pug ./src/pug/*.pug -o dist -w",
+    "ts": "tsc -w",
+    "scss": "sass ./src/scss/style.scss:./dist/style.css --watch",
+    "server": "live-server ./dist",
+    "imagemin": "imagemin ./src/img/* --out-dir=./dist/img/",
+    "clean": "rimraf ./dist",
+    "dev": "yarn ts | yarn scss | yarn pug | yarn server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kroyxlab/startProjectKit.git"
+  },
+  "keywords": [
+    "pug",
+    "sass",
+    "typescript",
+    "startedPack"
+  ],
+  "author": "Kristian Soto <kroyxlab@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kroyxlab/startilaro/issues"
+  },
+  "homepage": "https://github.com/kroyxlab/startilaro#readme",
+  "devDependencies": {
+    "imagemin-cli": "^6.0.0",
+    "live-server": "^1.2.1",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.7",
+    "typescript": "^4.1.5"
+  }
+}

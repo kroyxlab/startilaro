@@ -1,0 +1,15 @@
+.Col {
+	@include setColumns(2);
+
+	@include from(md) {
+		&-md {
+			@include setColumns(2);
+		}	
+	}
+
+	@include from(lg) {
+		&-lg {
+			@include setColumns(6)
+		}
+	}
+}

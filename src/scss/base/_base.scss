@@ -1,0 +1,17 @@
+body {
+	font-size: $fontSize+rem;
+	line-height: $lineHeight+rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl {
+	margin: 0 0 $lineHeight+rem;
+}
+
+hr {
+	margin: $lineHeight+rem 0 $lineHeight+rem 0;
+}

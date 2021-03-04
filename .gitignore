@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.sass-cache/
+yarn-error.log
+yarn-debug.log*
+*.css.map
+*.scss.map
+yarn.lock
