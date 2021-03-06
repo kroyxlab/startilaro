@@ -1,11 +1,10 @@
-extends ./includes/page-template
+extends ./templates/_defaŭlta.pug
 
-block header 
-	include ./includes/components/_header
+block header
+	include ./components/_Header.pug
 
-block content
+block main
 	main.Grid
 
 block footer
-	include ./includes/components/_footer
-
+	include ./components/_Footer.pug
